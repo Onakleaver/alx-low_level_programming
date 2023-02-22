@@ -23,4 +23,8 @@ int main(void)
 		if (i != 49)
 			printf(", ");
 	}
+
+	printf("\n");
+
+	return (0);
 }
