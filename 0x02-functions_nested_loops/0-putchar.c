@@ -2,7 +2,7 @@
 
 /**
  * main - print _putchar followed by a new line.
- *
+ * is written by Onakleaver
  * Return: Always 0.
  */
 
