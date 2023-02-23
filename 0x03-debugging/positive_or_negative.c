@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * positive_or_negative - indicates if int n is positive or negative
+ * positive_or_negative - indicates if a number is positive, negative or zero
+ * @n: The number to check
  */
 void positive_or_negative(int n)
 {
