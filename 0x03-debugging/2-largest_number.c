@@ -13,6 +13,7 @@ int largest_number(int a, int b, int c)
 
 	/**
 	 * if (a > b && b > c;
+	 * largest = a;
 	 */
 	if (a > b && a > c)
 	{
@@ -20,6 +21,7 @@ int largest_number(int a, int b, int c)
 	}
 	/**
 	 * else if (b > a && a > c);
+	 * largest = b;
 	 */
 	else if (b > a && b > c)
 	{
