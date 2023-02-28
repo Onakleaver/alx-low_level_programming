@@ -19,13 +19,13 @@ int convert_day(int month, int day)
 			day = 59 + day;
 			break;
 		case 4:
-			day = 90 + day - 1; // subtract 1 for April
+			day = 90 + day;
 			break;
 		case 5:
 			day = 120 + day;
 			break;
 		case 6:
-			day = 151 + day - 1; // subtract 1 for June
+			day = 151 + day;
 			break;
 		case 7:
 			day = 181 + day;
@@ -34,18 +34,19 @@ int convert_day(int month, int day)
 			day = 212 + day;
 			break;
 		case 9:
-			day = 243 + day - 1; // subtract 1 for September
+			day = 243 + day;
 			break;
-	       	case 10:
+		case 10:
 			day = 273 + day;
 			break;
 		case 11:
-			day = 304 + day - 1; // subtract 1 for November
+			day = 304 + day;
 			break;
 		case 12:
 			day = 334 + day;
 			break;
-		default:break;
+		default:
+			break;
 	}
 	return (day);
 }
