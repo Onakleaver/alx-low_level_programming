@@ -3,6 +3,7 @@
 /**
  * _puts - print string to stdout
  * @str: arry string type
+ * Description: use only _putchar
  */
 
 void _puts(char *str)
