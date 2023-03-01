@@ -9,7 +9,7 @@
 int main(void)
 {
 	char *str;
-	int le;
+	int len;
 
 	str = "My first strlen!";
 	len = _strlen(str);

@@ -4,10 +4,14 @@
 
 /**
  * _strlen - returns the lenth of a string
- * @s - character to test
- * Return: Always 0.
+ * @s: character type pointer
+ * Return: lenth of string 
  */
 int _strlen(char *s)
 {
-	strlen(s);
+	int a;
+
+	for (a = 0; s[a] != '\0'; a++);
+
+	return (a);
 }
