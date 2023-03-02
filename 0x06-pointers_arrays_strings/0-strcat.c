@@ -8,10 +8,21 @@
  * Return: Always 0.
  */
 
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
-	dest = 'n';
-	src = 'i';
+	int j = 0, i = 0;
 
-	_strcat(dest, src);
+	while (dest[j] != '\0')
+	{
+		i++;
+	}
+	while (src[i] != '\0')
+	{
+		dest[j] = src[i];
+		j++;
+		i++;
+	}
+	dest[j] = '\0';
+
+	return 0;
 }
