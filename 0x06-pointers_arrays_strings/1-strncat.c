@@ -6,7 +6,7 @@
  * @dest: test destination string
  * @src: test source string
  *@n: number of bytes src can store
- * Return: Always 0.
+ * Return: pointer to resulting string.
  */
 
 char *_strncat(char *dest, char *src, int n)
