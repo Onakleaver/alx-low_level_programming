@@ -1,7 +1,6 @@
-#ifndef MY_HEADER_H
-#define MY_HEADER_H
+#ifndef MAIN_H_INCLUDED
+#define MAIN_H_INCLUDED
 
-/*Function outputs data*/
-void output(const char* message);
+int _putchar(char c);
 
 #endif
