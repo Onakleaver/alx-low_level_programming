@@ -1,17 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 
-void print_alphabet(void)
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	char letter = 'a';
-	while (latter <= 'z')
-	{
-		printf("%c", letter);
-		letter ++;
-	}
-}
-
-int main ()
-{
-	void print_alphabet(void);
-	return 0;
+    print_alphabet();
+    return (0);
 }
