@@ -4,9 +4,7 @@
 
 int _isupper(int c)
 {
-	c = 'a';
-
-	if (_isupper(c))
+	if ((c >= 'A') && (c <= 'Z'))
 		return 1;
 	else
 		return 0;
