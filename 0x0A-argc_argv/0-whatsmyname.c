@@ -8,8 +8,15 @@
  */
 int main(int argc, char* argv[])
 {
+	char *str = argv[0];
+
 	(void)argc;
-	printf("%s\n", argv[0]);
+	while (*str != '\0')
+	{
+		_putchar(*str);
+			str++;
+	}
+	_putchar('\n');
 
 	return (0);
 }
