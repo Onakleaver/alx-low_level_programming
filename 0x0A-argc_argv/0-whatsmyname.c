@@ -6,7 +6,7 @@
  *@argv: shows values of commands
  *Return: Always 0
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	char *str = argv[0];
 
