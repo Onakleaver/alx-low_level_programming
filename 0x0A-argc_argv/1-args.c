@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = argc;
+	int i = argc - 1;
 	char c = i + '0';
 
 	(void)*argv;
