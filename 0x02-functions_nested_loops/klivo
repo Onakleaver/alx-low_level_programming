@@ -1,12 +1,10 @@
 #!/bin/bash
 git add .
-sleep 1
-echo "What is the commit massage?"
+echo "What does this commit do?"
 read "msg"
-sleep 1
-git commit -m "$msg"
-echo "The commit massage is $msg"
+sleep 2
+echo "The commit message is "$msg""
 sleep 3
+git commit -m "$msg"
 git push origin
-echo "Done"
-
+echo "Done [^_^]"
