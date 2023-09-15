@@ -16,7 +16,7 @@ Program prints characters.
 Prints alphabet in lowercase
 
 ## 2-print_alphabet_x10.c
-Programe prints lowercase alphabet 10 times
+Program prints lowercase alphabet 10 times
 
 ## 3-islower.c
 Checks if given characters are lowercase or not using `islower` function from the `ctype.h` library
@@ -26,3 +26,6 @@ Checks if input character is alphabetic using the `isalpha` function
 
 ## 5-sign.c
 Prints the sign of the input number
+
+## 6-abs.c
+Program creates a fnction `_abs` that prints the absolute function of integers similar to the `abs` function found in the `stdlib` library
