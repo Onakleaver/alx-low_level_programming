@@ -6,6 +6,6 @@ read "msg"
 sleep 1
 git commit -m "$msg"
 echo "The commit massage is $msg"
-sleep 3
+sleep 2
 git push origin
 echo "Done"
