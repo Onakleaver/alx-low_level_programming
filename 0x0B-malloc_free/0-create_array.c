@@ -19,6 +19,10 @@ char *create_array(unsigned int size, char c)
 
 	/*Below allocates memory of size of char that has null taminator*/
 	ptr = malloc(sizeof(char) * size);
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
 	/*Below initializes the array created with specific character*/
 	for (i = 0; i < size; i++)
 	{
