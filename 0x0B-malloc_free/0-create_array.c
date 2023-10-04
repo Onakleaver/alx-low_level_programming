@@ -19,6 +19,7 @@ char *create_array(unsigned int size, char c)
 
 	/*Below allocates memory of size of char that has null taminator*/
 	ptr = malloc(sizeof(char) * size);
+	/*important to check the return value of malloc, this dose so*/
 	if (ptr == NULL)
 	{
 		return (NULL);
