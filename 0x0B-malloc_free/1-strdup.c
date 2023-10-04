@@ -9,19 +9,21 @@
   */
 char *_strdup(char *str)
 {
-	char *ptr;
-	int length;
+	char *ptr;/*Creates the duplicate pointer*/
+	int length;/*integer to store length of pointer*/
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+	/*gets length to be allocated including the null terminator*/
 	length = strlen(str) + 1;
 	ptr = malloc(length);
-	if (ptr == NULL)
+	if (ptr == NULL)/*checks for return value of malloc*/
 	{
 		return (NULL);
 	}
+	/*uses strcpy to copy the string*/
 	strcpy(ptr, str);
 	return (ptr);
 }
