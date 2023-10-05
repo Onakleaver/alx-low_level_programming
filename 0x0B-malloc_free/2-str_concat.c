@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 	/*Incase either is NULL empty string*/
 	if (s1 == NULL || s2 == NULL)
 	{
-		return ('\0');
+		return ("");
 	}
 	/*finds total length to be allocated*/
 	len1 = strlen(s1);
