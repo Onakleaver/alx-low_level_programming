@@ -16,11 +16,11 @@ char *str_concat(char *s1, char *s2)
 	/*Incase either is NULL empty string*/
 	if (s1 == NULL)
 	{
-		s1 = '\0';
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		s2 = '\0';
+		s2 = "";
 	}
 	/*finds total length to be allocated*/
 	len1 = strlen(s1);
