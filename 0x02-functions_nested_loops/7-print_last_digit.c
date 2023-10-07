@@ -8,16 +8,18 @@
 int print_last_digit(int num)
 {
 	int dig;
-	
+		
 	/*Converts the value of num into positive if negative*/
 	if (num < 0)
 	{
 		num = -num;
 	}
-	if (num >= 0)
+	dig = num % 10;
+	
+	if (dig < 0)
 	{
-		dig = num % 10;
-		_putchar('0' + dig);
+		dig = -dig;
 	}
+	_putchar(dig + '0');
 	return (dig);
 }
