@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 #include <unistd.h>
 
 /**
@@ -23,6 +24,11 @@ int main(void)
 	char *name;
 	int i;
 
+	name = malloc (sizeof(char) + 1);
+	if (name == NULL)
+	{
+		return (1);
+	}
 	i = 0;
 	name = __FILE__;
 	while (name[i] != '\0')
