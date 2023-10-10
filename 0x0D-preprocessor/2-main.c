@@ -24,13 +24,9 @@ int main(void)
 	char *name;
 	int i;
 
-	name = malloc (sizeof(char) + 1);
-	if (name == NULL)
-	{
-		return (1);
-	}
-	i = 0;
-	name = __FILE__;
+#define NAME __FILE__
+
+	name = NAME;
 	while (name[i] != '\0')
 	{
 		_putchar(name[i]);
