@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdio.h>
 /**
   * print_name -prints a string name
   * @name: pointer to string
@@ -12,7 +13,6 @@ void print_name(char *name, void (*f)(char *))
 	i = 0;
 	while (name[i] != '\0')
 	{
-		_putchar(name[i]);
 		i++;
 	}
 	f(name);
