@@ -19,7 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		/** adds the variable in the list and stores it in sum**/
 		/** gets the next argument in the list using va_arg(ap,int)**/
-		sum += va_arg(ap,int);
+		sum += va_arg(ap, int);
 	}
 	va_end(ap);/**ends the argument list**/
 	return (sum);
