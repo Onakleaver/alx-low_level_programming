@@ -1,9 +1,0 @@
-#!/bin/bash
-git add .
-echo "What is the commit massage?"
-read "msg"
-echo "The commit massage is $msg"
-sleep 1
-git commit -m "$msg"
-git push origin
-echo "Done [>_<]"
