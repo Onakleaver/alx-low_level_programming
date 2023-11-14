@@ -1,1 +1,0 @@
-# Vardic fanctions 
