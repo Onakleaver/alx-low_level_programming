@@ -8,7 +8,7 @@
 
 void _puts_recursion(char *s)
 {
-	while (*s != '\0')
+	if (*s != '\0')
 	{
 		_putchar(*s);
 		/** The *s referes to the value stored in the pointer s**/
@@ -18,5 +18,8 @@ void _puts_recursion(char *s)
 		  * till you reach the null character
 		  */
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
