@@ -1,4 +1,4 @@
- #include<stdio.h>
+#include<stdio.h>
 /**
   *main -Entry point
   *
@@ -7,12 +7,14 @@
 int main(void)
 {
 	int num;
+	int mbur;
 
+	mbur = 48;
 	num = 48;
 	while (num <= 57)
 	{
-		int mbur = 48;
-
+	  if (num != mbur)
+	    {
 		while (mbur <= 57)
 		{
 			putchar(num);
@@ -23,6 +25,8 @@ int main(void)
 		}
 		num++;
 		putchar('\n');
+
+	   }
 	}
 	return (0);
 }
