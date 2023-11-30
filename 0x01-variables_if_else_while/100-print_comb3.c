@@ -6,23 +6,23 @@
   */
 int main(void)
 {
-	int num;
+	int a;
+	int b;
+	int c;
 
-	num = 48;
-	while (num <= 57)
+	c = ',';
+	for (a = 48; a < 57; a++)
 	{
-		int mbur = 48;
-
-		while (mbur <= 57)
+		for (b = 48; b < 57; b++)
 		{
-			putchar(num);
-			putchar(mbur);
-			putchar(',');
-			putchar(' ');
-			mbur++;
+			if (a != b)
+			{
+				putchar(a);
+				putchar(b);
+				putchar(c);
+			}
 		}
-		num++;
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
