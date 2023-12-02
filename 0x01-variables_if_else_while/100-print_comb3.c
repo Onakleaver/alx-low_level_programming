@@ -10,18 +10,23 @@ int main(void)
 	int b;
 	int c;
 
+	a = 0;
+	b = 0;
 	c = ',';
-	for (a = 48; a < 57; a++)
+	while (a < 9)
 	{
-		for (b = 48; b < 57; b++)
+		b = 0;
+		while (b < 9)
 		{
-			if (a != b)
+			if (a*10+b != b*10+a)
 			{
-				putchar(a);
-				putchar(b);
+				putchar(a + '0');
+				putchar(b + '0');
 				putchar(c);
 			}
+			b++;
 		}
+		a++;
 	}
 	putchar('\n');
 	return (0);
