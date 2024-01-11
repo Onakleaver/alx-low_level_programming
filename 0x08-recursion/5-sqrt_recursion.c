@@ -1,26 +1,47 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+   * _sqrt_help -function to help get the natural squreroot
+   * @n: number being tested
+   * @guess: guess of which number is correct
+   * Return: -1 if not correct
+   */
+int _sqrt_help(int n, int guess)
 {
-    int r;
+	if (n == guess * guess)
+	{
+		return (guess);
+	}
+	else if (guess * guess > n)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (_sqrt_help(n, guess + 1));
+	}
+}
 
-    r = _sqrt_recursion(1);
-    printf("%d\n", r);
-    r = _sqrt_recursion(1024);
-    printf("%d\n", r);
-    r = _sqrt_recursion(16);
-    printf("%d\n", r);
-    r = _sqrt_recursion(17);
-    printf("%d\n", r);
-    r = _sqrt_recursion(25);
-    printf("%d\n", r);
-    r = _sqrt_recursion(-1);
-    printf("%d\n", r);
-    return (0);
+/**
+  * _sqrt_recursion -prints the squreroot of a number
+  * @n: number to be tested
+  * Return: sqrt
+  */
+int _sqrt_recursion(int n)
+{
+	int guess = 1;
+
+	if (n < 0)
+	{
+		return (-1);
+	}
+	else if (n == 0 || n == 1)
+	{
+		return (1);
+	}
+	else
+	{
+
+		return (_sqrt_help(n, guess));
+	}
 }
