@@ -1,9 +1,9 @@
 #!/bin/bash
 git add .
-sleep 1
 echo "What is the commit massage?"
 read "msg"
 echo "The commit massage is $msg"
+sleep 1
 git commit -m "$msg"
 sleep 1
 git push origin
