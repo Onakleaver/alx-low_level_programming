@@ -10,8 +10,8 @@
 int main(int argc, char *argv[])
 {
 	char *a = argv[0];
+	(void)argc;
 
-	(void)argc;	
 	if (*a != '\0')
 	{
 		_putchar(*a);
