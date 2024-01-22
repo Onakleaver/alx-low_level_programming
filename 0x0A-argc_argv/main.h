@@ -1,5 +1,5 @@
-#ifndef MY_HEADER_FILE
-#define MY_HEADER_FILE
+#ifndef MY_HEADER_H
+#define MY_HEADER_H
 
 int _putchar(char c);
 
