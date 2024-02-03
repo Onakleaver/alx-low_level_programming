@@ -1,19 +1,15 @@
 #include <stdio.h>
-#include "main.h"
-
 /**
-* main -code entry point
-* @argc: argument count
-* @argv: argument vector
-* Return: always 0
-*/
-
+  * main -Code entry point
+  * @argc: argument count
+  * @argv: argument vector
+  * Return: Always 0
+  */
 int main(int argc, char *argv[])
 {
-	char *a;
-
 	(void)argc;
-	a = argv[0];
-	printf(*a);
+
+	printf("%s\n", argv[0]);
+
 	return (0);
 }
