@@ -8,9 +8,11 @@
 */
 int main(int argc, char **argv)
 {
-	(void)*argv;
+	int i;
 
-	printf("%d\n", argc);
+	(void)*argv;/*unused variable*/
+	i = argc - 1;/*holds the value of the number of arguments passed to the file*/
+	printf("%d\n", i);
 
 	return (0);
 }
