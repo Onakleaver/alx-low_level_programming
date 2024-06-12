@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 
 	for (a = 1; a < argc; a++)
 	{
-		num = strtol(argv[a], &endptr, 10);
+		num = (int)strtol(argv[a], &endptr, 10);
 
 	if (*endptr != '\0')
 	{
