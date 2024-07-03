@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
-  * print_last_digit -prints last digit of a number
-  * @num: format of test number
-  * Return: always 0
-  */
+ * print_last_digit -prints last digit of a number
+ * @num: format of test number
+ * Return: alwas 0
+ */
+
 int print_last_digit(int num)
 {
 	int dig;
