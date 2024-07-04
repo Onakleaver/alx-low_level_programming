@@ -14,15 +14,14 @@ void print_most_numbers(void)
 	a = 48;
 	while (a < 58)
 	{
-		if (a == 50 || a == 57)
+		if (a == 50 || a == 52)
 		{
-			a++;
 		}
 		else
 		{
 			_putchar(a);
-			_putchar('\n');
 		}
 		a++;
 	}
+	_putchar('\n');
 }
