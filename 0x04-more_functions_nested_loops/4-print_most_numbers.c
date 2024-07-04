@@ -9,14 +9,19 @@
 
 void print_most_numbers(void)
 {
-	int i;
+	int a;
 
-	for (i = 0; i <= 9; i++)
+	while (a < 58)
 	{
-		if (i != 2 && i != 4)
+		if (a == 50 || a == 57)
 		{
-			_putchar('0' + i);
+			a++;
 		}
-		_putchar('\n');
+		else
+		{
+			_putchar(a);
+			_putchar('\n');
+		}
+		a++;
 	}
 }
