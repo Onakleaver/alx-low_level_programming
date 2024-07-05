@@ -8,5 +8,4 @@ git commit -m "$msg"
 echo "The commit massage is $msg"
 sleep 3
 git push origin
-echo "Done"
-
+echo "Done \o/"
