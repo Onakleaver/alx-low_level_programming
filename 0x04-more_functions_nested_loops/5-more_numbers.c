@@ -12,17 +12,23 @@ void more_numbers(void)
 	int c;
 
 	a = 0;
-
-	while (a < 9)
+	c = 0;
+	while (a < 10)
 	{
-		for (b = 0; b <= 1; b++)
+		for (b = 0; b <= 14; b++)
 		{
-			_putchar(b + '0');
-			for (c = 0; c <= 9; c++)
+			if (b <= 9)
 			{
-				_putchar (c + '0');
+				_putchar(b + '0');
+			}
+			else
+			{
+				c = b % 10;
+				_putchar('1');
+				_putchar(c + '0');
 			}
 		}
 		_putchar ('\n');
+		a++;
 	}
 }
