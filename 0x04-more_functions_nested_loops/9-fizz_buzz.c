@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main -prints 1-100 with Fizz Buzz challenge of 3 & 5
+ * main -entry point
  * Return: Always 0
  */
 
@@ -28,7 +28,12 @@ int main(void)
 		{
 			printf("%d ", a);
 		}
+		if (a < 100)
+		{
+			printf(" ");
+		}
 	}
 	printf("\n");
+	
 	return (0);
 }
