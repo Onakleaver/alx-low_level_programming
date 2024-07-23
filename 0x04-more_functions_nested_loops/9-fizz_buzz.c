@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main -prints 1-100 with Fizz Buzz challenge of 3 & 5
