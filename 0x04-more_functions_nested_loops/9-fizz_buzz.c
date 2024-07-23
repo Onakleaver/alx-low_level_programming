@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -prints 1-100 but for multiples of 3 print fizz and for 5 buzz and multiples of both fizz buzz
+ * main -prints 1-100 with Fizz Buzz challenge of 3 & 5
  * Return: Always 0
  */
 
@@ -15,7 +15,7 @@ int main(void)
 		{
 			printf("FizzBuzz ");
 		}
-		else if ( a % 3 == 0)
+		else if (a % 3 == 0)
 		{
 			printf("Fizz ");
 		}
