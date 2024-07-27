@@ -9,14 +9,11 @@
 void print_rev(char *s)
 {
 	int length = strlen(s);
-	char reversed[length + 1];
-	int j = 0;
+	int i;
 
-	for (int i = length - 1; i >= 0; i--)
+	for (i = length - 1; i >= 0; i--)
 	{
-		reversed[j] = str[i];
-		j++;
+		_putchar(s[i]);
 	}
-	reversed[j] = '\0';
-	puts(reversed);
+	_putchar('\n');
 }
